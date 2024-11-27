@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects Showcase</title>
+    <style>
+        /* Paleta de cores personalizada */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: rgba(255, 255, 255, 0.87);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #7E57C2;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1E1E2F;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #B39DDB;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .cta-button {
+            background-color: #7E57C2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .cta-button:hover {
+            background-color: #B39DDB;
+        }
+        .card {
+            background-color: #1E1E2F;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-color: #1E1E2F;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        /* Estilos específicos dos projetos */
+        .project-card {
+            background-color: #1E1E2F;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+        }
+        .project-card h3 {
+            color: #B39DDB;
+        }
+        .project-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Projects Showcase</h1>
+        <p>Explore the variety of projects I've worked on!</p>
+    </header>
+
+    <nav>
+        <a href="#project1">Landing Page</a>
+        <a href="#project2">Profile Card</a>
+        <a href="#project3">Contact Form</a>
+        <a href="#project4">Price Table</a>
+        <a href="#project5">Image Gallery</a>
+        <a href="#project6">Vertical Navigation</a>
+        <a href="#project7">Portfolio</a>
+    </nav>
+
+    <!-- Landing Page -->
+    <div class="section" id="project1">
+        <h2>Landing Page</h2>
+        <div class="card">
+            <h3>Discover Our New Product</h3>
+            <img src="https://via.placeholder.com/400x300" alt="Product Image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="cta-button">Buy Now</a>
+        </div>
+    </div>
+
+    <!-- Profile Card -->
+    <div class="section" id="project2">
+        <h2>Profile Card</h2>
+        <div class="card">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture">
+            <h3>John Doe</h3>
+            <p>Web Developer</p>
+            <p>Passionate about building modern and responsive websites.</p>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="section" id="project3">
+        <h2>Contact Form</h2>
+        <div class="card">
+            <form>
+                <input type="text" placeholder="Your Name" required><br><br>
+                <input type="email" placeholder="Your Email" required><br><br>
+                <textarea placeholder="Your Message" required></textarea><br><br>
+                <button type="submit" class="cta-button">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Price Table -->
+    <div class="section" id="project4">
+        <h2>Pricing Plans</h2>
+        <div class="card">
+            <table>
+                <tr>
+                    <th>Plan</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Basic</td>
+                    <td>$19/month</td>
+                    <td><a href="#" class="cta-button">Sign Up</a></td>
+                </tr>
+                <tr>
+                    <td>Pro</td>
+                    <td>$39/month</td>
+                    <td><a href="#" class="cta-button">Sign Up</a></td>
+                </tr>
+                <tr>
+                    <td>Enterprise</td>
+                    <td>$59/month</td>
+                    <td><a href="#" class="cta-button">Sign Up</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="section" id="project5">
+        <h2>Image Gallery</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300x200" alt="Image 1">
+            <img src="https://via.placeholder.com/300x200" alt="Image 2">
+            <img src="https://via.placeholder.com/300x200" alt="Image 3">
+            <img src="https://via.placeholder.com/300x200" alt="Image 4">
+            <img src="https://via.placeholder.com/300x200" alt="Image 5">
+            <img src="https://via.placeholder.com/300x200" alt="Image 6">
+        </div>
+    </div>
+
+    <!-- Vertical Navigation -->
+    <div class="section" id="project6">
+        <h2>Vertical Navigation</h2>
+        <div class="card">
+            <div style="display: flex;">
+                <div style="width: 200px; background-color: #1E1E2F; padding: 10px;">
+                    <a href="#" style="color: white; display: block; padding: 10px;">Home</a>
+                    <a href="#" style="color: white; display: block; padding: 10px;">About</a>
+                    <a href="#" style="color: white; display: block; padding: 10px;">Services</a>
+                    <a href="#" style="color: white; display: block; padding: 10px;">Contact</a>
+                </div>
+                <div style="flex-grow: 1; padding: 10px;">
+                    <h3>Content Area</h3>
+                    <p>This is a simple vertical navigation menu with links.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="section" id="project7">
+        <h2>Portfolio</h2>
+        <div class="projects">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Building a responsive website for clients.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Developing a custom web application.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Creating an e-commerce platform from scratch.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
